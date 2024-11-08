@@ -29,3 +29,25 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
 
+## Runtime Analysis, Maxie M. 
+
+**Asymptotic Complexity in Terms of Comparisons** 
+- **Outer Loop:** runs $n$ times, as we sort $1$ element in each iteration
+- **Finding Largest Element:** will find the largest unsorted portion in each iteration 
+- **Total Comparisons** $n + (n - 1) + (n - 2) + \dots + 1 = \frac{n(n + 1)}{2}$ 
+- $\text{Runtime for Comparisons} = \Theta(n^2)$
+
+**Asymptotic Complexity in Terms of Flips** 
+- **Flips per Iteration:** Each iteration of the loop will require up to 2 flips, in order to place the maximum element in the correct position
+- **Total Flips:** Since 2 flips are performed per element, the total number of flips in the worst case is $2(n - 1) = \Theta(n)$
+
+**Conclusion** 
+- $\text{Comparisons:} \Theta(n^2)$
+- $\text{Flips:} \Theta(n)$
+
+## Plagiarism Statement: 
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+## Resources:
+- https://javascript.plainenglish.io/pancake-sorting-in-javascript-ecc1486e7e33
